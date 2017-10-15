@@ -15,35 +15,39 @@
   align-items: center;
 }
 .holder{
-  display: flex;
+  display: $display-default;
   user-select: none;
   justify-content: space-around;
-  align-items: auto;
+  align-items: center;
   flex-direction: column;
    @include size(90vh, 50vw);
 }
 .headline{
+  display: $display-default;
   text-align: center;
   align-self: auto;
-  @include size(40%, 100%);
 }
 .headline h1{
-  font-size: 10vh;
+  font-size: 8vh;
   font-family: $font-default;
   color: #FFC107;
   text-shadow: 2px 2px #000;
 }
 .button{
-
+  display: $display-default;
+  flex-direction: column;
+  justify-content: center;
+  @include size(40%, 100%);
   align-self: center;
 }
 .button input{
+  padding: 1vh;
+  align-self: center;
   outline: none;
   font-family: $font-default;
   border: none;
   border-radius: 25px;
   background-color:#FFC107;
-  @include size(10vh, 25vw);
   font-size: 7vh;
   color: #F5F5F5;
   text-shadow: 2px 2px #000;
