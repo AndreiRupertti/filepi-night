@@ -9,7 +9,7 @@
       <div class="photo">
         <div id='holder' class="holder">
           <div class="headline">
-            <h1>Descubra como será a noite de Filépi</h1>
+            <h1>Desdasdase Filépi</h1>
           </div>
           <div class="button">
             <input onclick="changeBackground()" type="button" name="descobrir" value="DESCOBRIR">
@@ -22,13 +22,17 @@
         min = Math.ceil(1);
         max = Math.floor(100);
         num = Math.floor(Math.random() * (max - min)) + min;
+        bgImage = document.getElementById('content').style.backgroundImage;
+        h1 = document.getElementById('content');
         if(num<33){
-          document.getElementById('holder').style.height = '80vh';
-          document.getElementById('content').style.backgroundImage = "url('../public/images/paring_massuce.jpeg')";
+          h1 = "Pareamento com massagem!";
+          bgImage = "url('../public/images/paring_massuce.jpeg')";
         }else if(num>33 && num<66){
-          document.getElementById('content').style.backgroundImage = "url('../public/images/pizza_puke.jpg')";
+          h1 = "Vai vomitar na Pizza!";
+          bgImage = "url('../public/images/pizza_puke.jpg')";
         }else if(num>66){
-          document.getElementById('content').style.backgroundImage = "url('../public/images/hello_darkness.jpeg')";
+          h1 = "Full Depressão";
+          bgImage = "url('../public/images/hello_darkness.jpeg')";
         }
 
       }
