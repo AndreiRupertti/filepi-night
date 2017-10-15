@@ -1,6 +1,5 @@
 const express = require('express')
 const path = require('path')
-const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const exphbs = require('express-handlebars')
 const sassMiddleware = require('node-sass-middleware')
@@ -29,7 +28,6 @@ app.get('/', (req, res) => {
   const headline = {headline: "Descubra como será a noite de Filépi"}
   res.render('index', {headline})
 })
-
 
 app.listen(app.get('port'), () => {
   console.log(`Node app is running on port ${app.get('port')}`)
