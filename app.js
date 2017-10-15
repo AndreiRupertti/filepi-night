@@ -19,18 +19,15 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
-//
-// const MONGO_URL = 'mongodb://localhost:27017/conhecimento-livre-dev'
-// app.set('MONGO_URL', (process.env.MONGO_URL || MONGO_URL))
-// mongoose.connect(app.get('MONGO_URL'))
-//
+
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 
 app.set('port', (process.env.PORT || 3000))
 
 app.get('/', (req, res) => {
-  res.render('index')
+  const headline = {headline: "Descubra como será a noite de Filépi"}
+  res.render('index', {headline})
 })
 
 

@@ -1,6 +1,5 @@
 @import "variables";
 @import "mixin";
-// @import "../public/images/banner.png";
 
 *{
   margin: 0;
@@ -15,34 +14,44 @@
   justify-content: center;
   align-items: center;
 }
-.photo{
-
-}
 .holder{
   display: flex;
-  justify-content: space-between;
+  user-select: none;
+  justify-content: space-around;
   align-items: auto;
   flex-direction: column;
-  //  background-color: #000;
-
-   @include size(45vh, 50vw);
+   @include size(90vh, 50vw);
 }
 .headline{
   text-align: center;
   align-self: auto;
-  // background-color: #EDEDED;
   @include size(40%, 100%);
 }
 .headline h1{
   font-size: 10vh;
-  color: red;
+  font-family: $font-default;
+  color: #FFC107;
+  text-shadow: 2px 2px #000;
 }
 .button{
 
   align-self: center;
 }
 .button input{
-  // background-color: #EDEDED;
+  outline: none;
+  font-family: $font-default;
+  border: none;
+  border-radius: 25px;
+  background-color:#FFC107;
   @include size(10vh, 25vw);
-  font-size: 5vh;
+  font-size: 7vh;
+  color: #F5F5F5;
+  text-shadow: 2px 2px #000;
+}
+.button input:hover{
+  background-color: #FFF176;
+}
+.button input:active {
+  background-color: #FFC107;
+  transform: translateY(4px);
 }
