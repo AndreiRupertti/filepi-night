@@ -1,0 +1,37 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+  <body>
+    <div id='content' class="content">
+      <div class="photo">
+        <div id='holder' class="holder">
+          <div class="headline">
+            <h1>Descubra como será a noite de Filépi</h1>
+          </div>
+          <div class="button">
+            <input onclick="changeBackground()" type="button" name="descobrir" value="DESCOBRIR">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function changeBackground() {
+        min = Math.ceil(1);
+        max = Math.floor(100);
+        num = Math.floor(Math.random() * (max - min)) + min;
+        if(num<33){
+          document.getElementById('holder').style.height = '80vh';
+          document.getElementById('content').style.backgroundImage = "url('../public/images/paring_massuce.jpeg')";
+        }else if(num>33 && num<66){
+          document.getElementById('content').style.backgroundImage = "url('../public/images/pizza_puke.jpg')";
+        }else if(num>66){
+          document.getElementById('content').style.backgroundImage = "url('../public/images/hello_darkness.jpeg')";
+        }
+
+      }
+    </script>
+  </body>
+</html>

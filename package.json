@@ -1,0 +1,35 @@
+{
+  "name": "file-night",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "mocha --recursive",
+    "watch": "mocha --recursive --watch"
+  },
+  "repository": "git+https://github.com/AndreiRupertti/filepi-night.git",
+  "author": "AndreiRupertti <arupertti@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreiRupertti/filepi-night/issues"
+  },
+  "homepage": "https://github.com/AndreiRupertti/filepi-night#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
+    "express": "^4.15.5",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.10",
+    "mocha": "^3.5.3",
+    "mongoose": "^4.11.14",
+    "node-sass-middleware": "^0.11.0",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.3",
+    "nodemon": "^1.12.1"
+  }
+}

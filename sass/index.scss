@@ -1,0 +1,48 @@
+@import "variables";
+@import "mixin";
+// @import "../public/images/banner.png";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.content{
+  @include size(100vh, 100vw);
+  background-image: url("../public/images/thinking.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: $display-default;
+  justify-content: center;
+  align-items: center;
+}
+.photo{
+
+}
+.holder{
+  display: flex;
+  justify-content: space-between;
+  align-items: auto;
+  flex-direction: column;
+  //  background-color: #000;
+
+   @include size(45vh, 50vw);
+}
+.headline{
+  text-align: center;
+  align-self: auto;
+  // background-color: #EDEDED;
+  @include size(40%, 100%);
+}
+.headline h1{
+  font-size: 10vh;
+  color: red;
+}
+.button{
+
+  align-self: center;
+}
+.button input{
+  // background-color: #EDEDED;
+  @include size(10vh, 25vw);
+  font-size: 5vh;
+}
